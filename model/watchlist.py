@@ -1,5 +1,5 @@
 class Watchlist:
-    def __init__(self, name):
+    def __init__(self):
         self.stocks = []
 
     def add_stock(self, stock):

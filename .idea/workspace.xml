@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14831ad3-ea82-4fd7-a0aa-2cabab07f611" name="Changes" comment="" />
+    <list default="true" id="14831ad3-ea82-4fd7-a0aa-2cabab07f611" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/watchlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/watchlist.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +41,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2ICi7gZlP9HRB3FSeBIvXT2M1bO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -95,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669691800942</updated>
       <workItem from="1669691804004" duration="237000" />
-      <workItem from="1669692056005" duration="645000" />
+      <workItem from="1669692056005" duration="1061000" />
     </task>
     <servers />
   </component>

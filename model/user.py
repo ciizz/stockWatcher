@@ -3,7 +3,8 @@ from model.watchlist import Watchlist
 
 class User:
     def __init__(self):
-        self.watchlist = Watchlist();
+        # self.username = ""
+        self.watchlist = Watchlist()
 
     def add_to_watchlist(self, stock):
         self.watchlist.append(stock)

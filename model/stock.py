@@ -1,6 +1,7 @@
 class Stock:
-    def __init__(self, name, price):
+    def __init__(self, name, ticker, price):
         self.name = name
+        self.ticker = ticker
         self.price = price
 
     def __str__(self):
@@ -8,6 +9,9 @@ class Stock:
 
     def get_name(self):
         return self.name
+        
+    def get_ticker(self):
+        return self.ticker
 
     def get_price(self):
         return self.price

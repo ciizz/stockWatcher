@@ -1,15 +1,15 @@
 all: run setup test clean
 .phony: all
 
+setup:requirements.txt 
+	pip install -r requirements.txt
+
 run:
-    flask --app app run
+	flask --app app run
 
-setup: requirements.txt
-    pip install -r requirements.txt
+test:   
+	python3 -m unittest discover -s test -p "test/*.py"
 
-test:
-    python3 -m unittest discover -s test -p "test/*.py"
-
-clean: 
-    rm -rf __pycache__
+clean:  
+	rm -rf __pycache__
 

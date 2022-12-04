@@ -2,7 +2,7 @@ run:
 	flask --app app run
 
 unittests:
-	python -m unittest test/*.py -v
+	python3 -m unittest discover -s test -p '*_tests.py' -v
 
 setup: requirements.txt
 	pip install -r requirements.txt

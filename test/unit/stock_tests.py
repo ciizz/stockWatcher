@@ -1,6 +1,4 @@
 import unittest
-import sys
-sys.path.append('../')
 from model.user import User
 from model.stock import Stock
 from model.watchlist import Watchlist

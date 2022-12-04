@@ -56,7 +56,7 @@ def remove_from_watchlist(ticker):
 
 
 
-############ helper methods
+############ helper methods ############
 def stocks_to_list(stocks):
     if stocks is None:
         return None

@@ -8,8 +8,12 @@ app = Flask(__name__)
 
 user_hashmap = {}
 
+@app.route("/")
+def hello():
+    return "Hello World! Welcome to Stock Watcher!"
 
-@app.route("/stock/<ticker>")
+
+@app.route("/stock/<ticker>", methods=['GET'])
 def get_stock(ticker):
     stock = get_stock_price(ticker)
     return jsonify(stock.__dict__)

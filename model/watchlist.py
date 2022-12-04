@@ -8,7 +8,7 @@ class Watchlist:
     def remove_stock(self, stock):
         # remove stock with same name and ticker
         for i in range(len(self.stocks)):
-            if self.stocks[i].get_ticker() == stock.get_ticker():
+            if self.stocks[i].get_name() == stock.get_name():
                 self.stocks.pop(i)
                 break
 

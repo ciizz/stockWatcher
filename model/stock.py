@@ -5,7 +5,7 @@ class Stock:
         self.price = price
 
     def __str__(self):
-        return f"{self.name} {self.price}"
+        return f"{self.name} {self.ticker} {self.price}"
 
     def get_name(self):
         return self.name

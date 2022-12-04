@@ -1,12 +1,12 @@
 run:
 	flask --app app run
 
-tests:
+unittests:
 	python3 -m unittest discover -s tests -p "test/*.py"
 
 setup: requirements.txt
 	pip install -r requirements.txt
 
 clean:
-	rm -rf __pycache__
+	rm -rf __pycache__ model/__pycache__
 

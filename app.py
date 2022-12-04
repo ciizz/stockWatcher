@@ -8,10 +8,12 @@ app = Flask(__name__)
 
 user_hashmap = {}
 
+
 @app.route("/stock/<ticker>")
 def get_stock(ticker):
     stock = get_stock_price(ticker)
     return jsonify(stock.__dict__)
+
 
 @app.route("/get_watchlist", methods=["GET"])
 def get_watchlist():
@@ -53,7 +55,9 @@ def remove_from_watchlist(ticker):
     return jsonify(stocks_to_list(tmp_user.get_watchlist().get_stocks()))
 
 
-# helper method
+
+############ helper methods ############
+
 def stocks_to_list(stocks):
     if stocks is None:
         return None

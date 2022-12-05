@@ -19,3 +19,16 @@ jobs:
 
     - name: Run unit tests
       run: make unittests
+
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_email: "dev.cesararnouk@gmail.com"
+        heroku_api_key: '77005dee-b845-4b1f-88fe-7947c90bf44f'
+        heroku_app_name: "ecse437-stockwatcher"
+        

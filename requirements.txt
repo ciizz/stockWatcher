@@ -2,3 +2,4 @@ Flask==2.2.2
 Flask-Jsonpify==1.5.0
 yfinance==0.1.87
 requests==2.26.0
+gunicorn==20.0.4

@@ -10,7 +10,7 @@ user_hashmap = {}
 
 @app.route("/")
 def hello():
-    return "Hello ECSE437! Welcome to Stock Watcher!"
+    return "Hello World! Welcome to Stock Watcher!"
 
 
 @app.route("/stock/<ticker>", methods=['GET'])

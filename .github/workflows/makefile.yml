@@ -7,10 +7,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  unittests:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
 
@@ -19,11 +17,20 @@ jobs:
 
     - name: Run unit tests
       run: make unittests
+  
+  integrationtests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
 
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run integration tests
+      run: make integrationtests
 
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - uses: akhileshns/heroku-deploy@v3.12.12
